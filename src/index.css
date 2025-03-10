@@ -1,0 +1,405 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.root{
+  margin:0px auto;
+}
+
+.header {
+  text-align: left;
+  padding: 10px;
+ 
+  color: white;
+  display:flex;
+ 
+}
+.header img{
+  height:40px;
+  width:40px;
+  margin:5px;
+}
+ .footer {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  color:white;
+  margin-top: 362px;
+    margin-left: -28px;
+    margin-right: 0px;
+    margin-bottom: -38px;
+  /* position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  margin-top:auto; */
+}
+.footer p{
+  padding-top:10px;
+}
+.main-container{
+  background-color: #2a2b2c;
+  padding-top:80px;
+  padding-bottom: 80px;
+  margin-left:-30px;
+  margin-right:0px;
+  margin-bottom: -362px;
+}
+.main-container img{
+  height:60px;
+  width:60px;
+  margin-bottom:20px;
+}
+.container{
+  display:flex;
+  flex-direction: column
+
+  
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.btn-primary {
+  
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #157457;
+}
+
+.dashboard-container {
+  display: flex;
+
+}
+
+.dashboard-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  margin-left: 66px;
+}
+.card-login {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  margin-left: 66px;
+}
+.card img{
+  height:35px;
+  width:35px;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.chart {
+  width: 48%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #000;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+
+}
+
+.sidebar-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-menu {
+  margin-top:70px;
+}
+.sidebar-menu li {
+  margin: 10px 0;
+  margin-top:20px;
+}
+
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.sidebar-menu li a:hover {
+  background: #28a745;
+}
+.medicine-trials-container {
+  margin-left: 260px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-top:30px;
+}
+.header {
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  color: white;
+  display:flex;
+  margin-top: -0px;
+  margin-left:-28px;
+  margin-right:0px;
+}
+.header img{
+  height:40px;
+  width:40px;
+  margin:2px;
+  margin-left:40px;
+  
+}
+.dashboard-content{
+    margin-left: 260px; 
+    padding: 20px;
+    width: calc(100% - 260px);
+    margin-top: 80px; 
+}
+.header, .footer {
+ 
+  z-index: 1000;
+  width: 102%;
+  
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #000;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  overflow-y: auto; 
+  z-index: 999;
+  /* margin-top:70px; */
+}
+.sidebar-menu img{
+  height:25px;
+  width:25px;
+}
+.app-container{
+  margin-top:-25px;
+  margin-bottom: -25px;;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+ 
+}
+
+.btn{
+  align-items: end;
+}
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-content {
+margin-top: 40px;;
+}
+.modal-content button[type="submit"] {
+  background: #28a745;
+  color: white;
+}
+
+.modal-content button[type="button"] {
+  background: #dc3545;
+  color: white;
+}
+.pie-chart {
+  width:100% ;
+  height:400px ;
+
+}
+.bar-chart{
+
+
+  width:100% ;
+  height:400px ;
+
+}
+.charts{
+  display:flex;
+  margin:50px;
+  /* width:500px; */
+  margin-bottom:-150px;
+}
+@media (max-width:430px) {
+  .sidebar {
+    width: 150px;
+    height: 950px;
+    background: #000;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    overflow-y: auto; 
+    z-index: 999;
+    /* margin-top:70px; */
+  
+  }
+  .sidebar-menu{
+    margin-left:-10px;
+  }
+  .dashboard-content{
+    margin-left: 150px; 
+    padding: 20px;
+    width: calc(100% - 260px);
+    margin-top: 80px; 
+}
+.card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  margin-left: 20px;
+  margin-top:10px;
+}
+.card-login{
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  margin-left: 20px;
+  margin-top:10px;
+}
+
+.table-responsive{
+  max-width: 172%;
+  overflow-x: auto;
+  width:190px;
+  margin-top:30px;
+}
+
+.pagination{
+  margin-left:60px;
+}
+.header, .footer {
+  z-index: 1000;
+  width: 106%;
+}
+.pie-chart {
+  width:130% ;
+  height:200px ;
+  margin-left:-30px;;
+}
+.bar-chart{
+   width:130% ;
+  height:300px ;
+  margin-left:-30px;;
+}
+.charts{
+  display:flex;
+  flex-direction: column;
+ width:150px;
+ margin-bottom: -90px;;
+}
+/* .card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width:300px;
+ 
+  margin-left: 66px;
+} */
+.login-btn{
+  margin-left:-30px;
+}
+}
