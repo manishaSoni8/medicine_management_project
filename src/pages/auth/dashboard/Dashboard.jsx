@@ -107,7 +107,7 @@ const Dashboard = () => {
             totalAllergy={allergies.length}
           />
  
-        
+        <h1>Hello Everyone</h1>
           <div className="charts">
             <PieChart departmentData={departmentData} />
             <BarChart allergyData={allergyData} />
