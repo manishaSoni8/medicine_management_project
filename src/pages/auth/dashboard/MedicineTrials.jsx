@@ -36,7 +36,7 @@ const MedicineTrials = () => {
   }));
   console.log('formattedValues',formattedValues)
   
-  const recordsPerPage = 3;
+  const recordsPerPage = 5;
   const totalPages = Math.ceil(values.length / recordsPerPage);
   
   const indexOfLastRecord = currentPage * recordsPerPage;
