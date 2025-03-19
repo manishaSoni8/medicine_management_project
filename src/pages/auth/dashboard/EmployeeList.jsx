@@ -49,7 +49,7 @@ const currentRecords = filteredEmployees.slice(indexOfFirstRecord, indexOfLastRe
         <div className="dashboard-container d-flex">
         <div className="dashboard-content p-4">
           <h2 className="text-success">Employee List</h2>
-          <Filter searchTerm={searchTerm} setSearchTerm={setSearchTerm} onSearch={handleSearch} placeholder="Search Employee by Name"/>
+          <Filter searchTerm={searchTerm} setSearchTerm={setSearchTerm} onSearch={handleSearch} placeholder="Search Employee by Name or Department "/>
           {status === "loading" && <p className="text-center">Loading employees...</p>}
           {status === "failed" && <p className="text-center text-red-500">Error: {error}</p>}
           {status === "succeeded" && employees.length > 0 ? (
