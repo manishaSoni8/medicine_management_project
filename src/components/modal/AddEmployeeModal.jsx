@@ -129,7 +129,7 @@ if (!employeeData.name || !employeeData.designation || !employeeData.department 
             type="email"
             name="email"
             placeholder="Email"
-value={employeeData.email}
+            value={employeeData.email}
             onChange={handleChange}
             required
           />
