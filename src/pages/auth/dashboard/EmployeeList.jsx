@@ -13,7 +13,7 @@ const EmployeeList = () => {
   const { list: employees = [], status, error } = useSelector((state) => state.employees);
   const [searchTerm, setSearchTerm] = useState("");
   const filteredEmployees = employees.filter((emp) =>
-    emp.name.toLowerCase().includes(searchTerm.toLowerCase())
+    emp.name.toLowerCase().includes(searchTerm.toLowerCase())|| emp.department.toLowerCase().includes(searchTerm.toLowerCase())
   );
 const [currentPage, setCurrentPage] = useState(1);
 const recordsPerPage = 5;
