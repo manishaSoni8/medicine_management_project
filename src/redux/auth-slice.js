@@ -1,25 +1,25 @@
 
 
-import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { ref, get } from "firebase/database";
 import { db } from "../firebase/firebaseConfig";
 export const login = createAsyncThunk(
   "auth/login",
   async ({ email, password }, { rejectWithValue }) => {
     try {
-      const dbRef = ref(db, "users"); 
+      const dbRef = ref(db, "users");
       const snapshot = await get(dbRef);
- 
-      console.log("Fetched Data:", snapshot.val()); 
- 
+
+      console.log("Fetched Data:", snapshot.val());
+
       if (snapshot.exists()) {
         const users = snapshot.val();
         const user = Object.values(users).find(
-(u) => u.email === email && u.password === password
+          (u) => u.email === email && u.password === password
         );
- 
+
         if (user) {
-const token = `${user.id}-${new Date().getTime()}`;
+          const token = `${user.id}-${new Date().getTime()}`;
           localStorage.setItem("authToken", token);
           return token;
         } else {
@@ -37,7 +37,7 @@ const token = `${user.id}-${new Date().getTime()}`;
 export const logout = createAsyncThunk("auth/logout", async () => {
   localStorage.removeItem("authToken");
 });
- 
+
 const authSlice = createSlice({
   name: "auth",
   initialState: {
@@ -65,5 +65,5 @@ const authSlice = createSlice({
       });
   },
 });
- 
+
 export default authSlice.reducer;
