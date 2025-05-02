@@ -4,3 +4,4 @@ const fetchDashboardData = async () => {
     return response.json();
   };
   export default fetchDashboardData;
+
