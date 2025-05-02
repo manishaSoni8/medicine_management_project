@@ -1,6 +1,6 @@
 export const allergyLoader = async () => {
     try {
-        const response = await fetch("https://medicine-management-syst-b12fe-default-rtdb.firebaseio.com/dashboards/3/.json"); 
+        const response = await fetch(" https://drug-management-344af-default-rtdb.firebaseio.com/dashboards/3/.json"); 
         const data = await response.json();
   
         console.log("Fetched Allergy Data:", data);

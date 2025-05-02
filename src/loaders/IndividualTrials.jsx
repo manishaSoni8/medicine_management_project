@@ -1,10 +1,10 @@
 export const individualTrialsLoader = async () => {
     try {
       const individualTrialsRes = await fetch(
-        "https://medicine-management-syst-b12fe-default-rtdb.firebaseio.com/dashboards/4/.json"
+        " https://drug-management-344af-default-rtdb.firebaseio.com/dashboards/4/.json"
       );
       const medicineTrialsRes = await fetch(
-        "https://medicine-management-syst-b12fe-default-rtdb.firebaseio.com/dashboards/2/.json"
+        " https://drug-management-344af-default-rtdb.firebaseio.com/dashboards/2/.json"
       );
   
       const individualTrialsData = await individualTrialsRes.json();

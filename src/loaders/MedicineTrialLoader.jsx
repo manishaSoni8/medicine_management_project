@@ -1,6 +1,6 @@
 const medicineTrialsLoader = async () => {
     try {
-      const response = await fetch("https://medicine-management-syst-b12fe-default-rtdb.firebaseio.com/dashboards/2/.json");
+      const response = await fetch(" https://drug-management-344af-default-rtdb.firebaseio.com/dashboards/2/.json");
       const fetchedData = await response.json();
   
       console.log("Loader Data:", fetchedData); 
