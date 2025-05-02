@@ -15,7 +15,7 @@ export const login = createAsyncThunk(
       if (snapshot.exists()) {
         const users = snapshot.val();
         const user = Object.values(users).find(
-          (u) => u[0].useremailid === email && u[0].password === password
+          (u) => u.email === email && u.password === password
         );
 
         if (user) {
