@@ -32,6 +32,7 @@ const Login = () => {
         <img className="mb-3" src={medicineImg} alt="Medicine" style={{ width: "70px",height:"120px;", margin: "auto" }} />
         <p className="text-center text-success">
           <strong>Welcome back, enter your credentials to continue.</strong>
+          <h2>This is medicine management system</h2>
         </p>
         {error && <p className="alert alert-danger">{error}</p>}
         <form onSubmit={handleLogin}>
